@@ -1,0 +1,17 @@
+<?php
+$driver="mysql";
+$host = 'localhost';
+$db = 'id13249830_websitegym';
+$user = 'id13249830_admin';
+$pass = '5_hCdwiJi\{{0&77';
+$charset = 'utf8';
+$dsn = "mysql:host=$host;dbname=$db";
+$option=[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
+
+try{
+    $pdo = new PDO("$driver:host=$host;dbname=$db;charset=$charset",$user,$pass,$option);
+    session_start();
+}
+catch(PDOException $e){
+    die("error");
+}

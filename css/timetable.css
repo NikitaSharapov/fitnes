@@ -1,0 +1,81 @@
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    align-items: center;
+    text-align: center;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+nav img {
+    width: 45%;
+}
+
+nav li:hover {
+    color: #000;
+    transition: all ease-in-out .6s;
+}
+
+.mobil_menu {
+    display: none;
+}
+
+
+
+.timetable{
+    padding:120px 30px;
+    background: white;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: repeat(5,1fr) ;
+}
+.timetable h2 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    position: relative;
+    padding-top: 20px;
+    color: inherit;
+    padding-bottom: 20px;
+}
+
+.timetable  h2:before {
+    content: "";
+    left: 23px;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fd7e14;
+}
+.day_cards{
+    /* display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(7,1fr) ;
+    grid-template-rows: 1fr ; */
+    display: flex;
+
+    flex-wrap: wrap;
+}
+.day_card{
+    margin: 20px;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.774);
+    width: 200px;
+    height:100px;
+    text-align: center;
+}
+.day_card p{
+    font-size: 18px;
+}
+

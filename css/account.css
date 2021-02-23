@@ -1,0 +1,123 @@
+@import"reset.css";
+
+.account_content {
+    background: white;
+    padding: 120px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-gap: 10px;
+    align-items: center;
+
+}
+
+.account_content img {
+    display: grid;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    margin-left: 16%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.acc_img{
+    width: 450px;
+    height: 500px;
+}
+.account_inf h4 {
+    font-size: 30px;
+    color: black;
+}
+
+.account_inf li {
+    font-size: 20px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.account_inf li b {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.editpanel {
+     background: white;
+     padding-bottom: 120px;
+   /* display: grid;
+    grid-template: 1fr/5fr 1fr;
+    grid-gap: 5px;  */
+}
+/* .editpanel { */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 80px;
+} */
+.editpanel a {
+    background: rgba(0, 0, 0, 0.74);
+    text-decoration: inherit;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    font-size: 20px;
+    padding: 15px 10px;
+    font-weight: 400;
+    
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.editpanel a:hover{
+    background: rgba(0, 0, 0, 0.863);
+    transition: .2s;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .account_content {
+        grid-template-columns: 1fr;
+
+    }
+    .editpanel{
+        grid-template-columns: 1fr;
+        
+    }
+    .editpanel ul{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding:0 ;
+        grid-gap: 5px;
+    }
+    .account_content img {
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .acc_img {
+        margin: auto;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .acc_img {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .acc_img{
+        margin: auto;
+        width: 250px;
+        height: 300px;
+    }
+
+
+    .editpanel a {
+        font-size: 17px;
+        padding: 15px 5px;
+    }
+}

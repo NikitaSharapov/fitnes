@@ -1,0 +1,79 @@
+@import "reset.css";
+
+.our_team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url('../media/bg_2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.our_team h2 {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 30px;
+
+}
+
+.our_team h2:before {
+    content: "";
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fd7e14;
+}
+
+.team_cardlist {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+}
+
+.team_card {
+    justify-self: center;
+    width: 500px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 5px;
+}
+
+.team_card img {
+    width: 50%;
+}
+
+.team_card h3 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 15px 0 20px 0;
+}
+
+.team_card p {
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 50px;
+    line-height: 1.7;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:1050px) {
+    .team_cardlist {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .team_card {
+        width: 300px;
+    }
+}

@@ -1,0 +1,516 @@
+@import "reset.css";
+@import "preloader.css";
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+ background: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    margin: 0 0;
+}
+
+/* <!----------------------- Хедер, header -----------------------> */
+header {
+    background: white;
+    display: grid;
+    grid-template: 110px/1fr 1fr;
+    align-items: center;
+    grid-gap: 5px;
+    justify-content: center;
+    position: fixed;
+    z-index: 6;
+    -webkit-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header h1 {
+    font-weight: 300;
+    padding-left: 30px;
+    font-size: 26px;
+}
+
+header h1 em {
+    font-weight: 600;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    align-items: center;
+    text-align: center;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+nav img {
+    width: 25%;
+}
+
+nav li:hover {
+    color: #000;
+    transition: all ease-in-out .6s;
+}
+
+.mobil_menu {
+    display: none;
+}
+
+main{
+padding: 150px 30px;
+background: white;
+}
+
+
+
+
+.tabs {
+    width: 100%;
+
+ }
+ /* Стили для списка вкладок */
+ .tab-header {
+     font-size: 20px;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+ }
+ /* Стили для вкладки */
+ .tab-header__item {
+    background: rgba(0, 0, 0, 0.863);
+    color: white;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.863);
+ }
+ /* Стили для активной вкладки */
+ .tab-header__item.active {
+    background: white;
+    transition: .2s;
+    color: black;
+    border-bottom: 1px solid black;
+    position: relative;
+ }
+ /* Стиль для списка контейнеров с содержимым вкладок */
+ .tab-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ /* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+ .tab-content__item {
+    display: none;
+    padding: 20px;
+    margin-top: -1px;
+ }
+ /* Стили для активного контейнера вкладки */
+ .tab-content__item.active {
+    display: block;
+    height: 660px;
+ }
+.change_block{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-gap: 5px;
+}
+form{
+    width: 400px;
+    display: grid;
+    grid-gap: 20px;
+}
+.inpForm {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: none;
+    border: 1px solid black;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+  
+}
+.inpFormTxt{
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+    border: none;
+    border: 1px solid black;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.tab-content h3 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    position: relative;
+    padding-top: 20px;
+    color: inherit;
+    padding-bottom: 40px;
+}
+
+.tab-content  h3:before {
+    content: "";
+    left: 23px;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fd7e14;
+}
+.tab-content h4{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    padding-top: 20px;
+    color: inherit;
+    padding-bottom: 20px;
+}
+
+.subButtonForm {
+    width: 100%;
+    height: 50px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 45px;
+    text-decoration: none;
+    background: #ffffff;
+    transition: all 300ms ease-in-out;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: black;
+    border: none;
+    -webkit-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    border: 1px solid black;
+}
+
+.subButtonForm:hover {
+    background: #eeeeee;
+    -webkit-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    
+} 
+.subButtonForm:active{
+    background: rgba(0, 0, 0, 0.37);
+}
+.inf_block{
+    padding: 20px 60px;
+    -webkit-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+}
+.inf_block h5{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px;
+    padding-bottom: 8px;
+}
+
+.inf_block p{
+    font-size: 18px;
+    padding-left: 12px;
+    padding-bottom: 15px;
+    line-height: 25px;
+}
+.noneBlock{
+    display: none;
+}
+.del_msg{
+    margin: 15px;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+    text-decoration: none;
+    background: #ffffff;
+    transition: all 300ms ease-in-out;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: black;
+    border: none;
+    -webkit-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    border: 1px solid black;
+}
+.del_msg:hover {
+    background: #f9f9f9;
+    -webkit-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+    box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.77);
+}
+.msg{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    padding: 7px 10px;
+}
+.none{
+    display: none;
+}
+.error{
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(255,0,0,1);
+    box-shadow: 0px 2px 0px 0px rgba(255,0,0,1);
+    
+}
+
+
+.info{
+    padding: 20px 60px;
+    -webkit-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px -8px rgba(0,0,0,0.75);
+}
+.info p {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+
+}
+
+.add_form{
+    padding-bottom: 50px;
+}
+
+.edit_form{
+    padding-bottom: 50px;
+}
+.del_form{
+    width: 400px;
+    display: grid;
+    grid-gap: 20px;
+    padding-bottom: 50px;
+    grid-template-rows: 60px 50px 50px;
+}
+::-webkit-inner-spin-button { display: none; }
+@media screen and (max-width:1400px) {
+    .change_block{
+        grid-template-columns: 1fr;
+        
+    }
+}
+@media screen and (max-width:1260px) {
+    .tab-header {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .tab-header li :last-child{
+        font-size: 20px;
+    }
+    .tab-header__item {
+        margin-right: 0px;
+    }
+} 
+
+
+@media screen and (max-width:1172px) {
+    .info{
+        padding: 20px 10px;
+    }
+    .wrapper {
+        margin: 0 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .bottomNav ul,
+    p {
+        font-size: 11px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .mobil_menu {
+        display: block;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 44px;
+        right: 40px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 4px;
+
+        background-color: #000000;
+
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: rgb(236, 239, 241);
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 2;
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+
+        color: rgb(34, 34, 34);
+
+        font-family: 'Open sans', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        transition-duration: .25s;
+    }
+
+    .menu__item:hover {
+        background-color: rgba(0, 0, 0, 0.781);
+        color: #ECEFF1;
+    }
+}
+@media screen and (max-width:640px) {
+.inf_block{
+    display: grid;
+    grid-template-rows: repeat(1fr ,8);
+    justify-content: center;
+    align-items: center;
+}
+
+}
+@media screen and (max-width:520px) {
+    main{
+        padding: 150px 10px;
+    }
+    .inf_block{
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width:452px) {
+    main{
+        padding: 150px 5px;
+    }
+}
+ @media screen and (max-width:446px) {
+    .tab-content__item{
+        padding: 5px;
+    }
+    form{
+        width: 350px;
+    }
+    .add_form{
+        width: 350px;
+    }
+    
+    .edit_form{
+        width: 350px;
+    }
+    .del_form{
+        width: 350px;
+    }
+ }
+@media screen and (max-width:392px) {
+    .del_msg{
+        line-height: 24px;
+    }
+    form{
+        width: 300px;
+    }
+    .add_form{
+        width: 300px;
+    }
+    
+    .edit_form{
+        width: 300px;
+    }
+    .del_form{
+        width: 300px;
+    }
+}
+@media screen and (max-width:338px) {
+    .del_msg{
+        line-height: 24px;
+    }
+}
+
+
